@@ -1,2 +1,2 @@
-Primeiro READ_ME
-Segundo commit teste
+teste
+praticando git e github
