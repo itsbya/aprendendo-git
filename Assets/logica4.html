@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lógica de Programação</title>
+    <style>
+     body{
+        background-color: lightgreen;
+      }
+
+      h1{
+        margin-top: 15rem;
+        margin-bottom: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+        background-color: white;
+      }
+      #output {
+        margin: 1rem 36rem 0 36rem;
+        padding: 1rem 3rem 1rem 3rem;
+        background-color: blue;
+        border-radius: 5px;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: medium;
+      }
+
+      .mais{
+        margin: 0 0 0 38rem;
+        size: 50px;
+      }
+      .menos{
+        margin: 0 32rem 0 38rem;
+        size: 50px;
+
+      }
+      .multiplicar{
+        margin: 0 0 0 36rem;
+        size: 50px;
+
+      }
+      .dividir{
+        margin: 0 32rem 0 38rem;
+        size: 50px;
+
+      }
+      .resto{
+        margin: 0 0 20rem 41rem;
+        size: 50px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sua calculadora</h1>
+
+    <div id="output"></div>
+    <br />
+
+
+    <script>
+      /* EXERCICIOS DE ARRAYS 
+      
+      1. Crie uma Array de marcas de carros e depois empurre pra dentro da Array mais alguns
+      e ordene eles na tela :
+      */
+
+    let carros = new Array('Creta <br>', 'Kicks <br>', 'HRV <br>', 'BMW <br>', 'Porche <br>');
+
+  carros.push('Jeep Renegate <br>', 'Eco Sport <br>', 'Range Rouver');
+
+  let output = document.querySelector('#output');
+
+  let msg = '';
+
+  for(let i = 0; i < carros.length; i++){
+    msg += 'Carro '+ (i + 1) + ' : ' + carros[i] + '<br>';
+
+
+  }
+
+  output.innerHTML = msg;
+
+
+
+    
+
+
+
+/*
+2.
+
+let dias = new Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado');
+
+let hoje = new Date();
+
+let diasDaSemana = hoje.getDay();
+
+alert('Bem Vindo(a) hoje é ' + dias[diasDaSemana]);*/
+
+
+
+/*
+3.
+
+let meses = new Array('Janeiro <br>', 'Fevereiro <br>', 'Março <br>', 'Abril <br>', 'Maio <br>', 'Junho <br>','Julho <br>' ,'Agosto <br>');
+
+meses.push('Setembro <br>', 'Outubro <br>', 'Novembro <br>', 'Dezembro');
+
+let mes = new Date();
+
+let mesAtual = mes.getMonth();
+
+let output = document.querySelector('#output');
+output.innerHTML = 'Bem Vindo(a) estamos no mês de ' + meses[mesAtual] ;*/
+
+
+/*
+4.
+
+let numbers = new Array(1, 4, 7, 9, 10, 11, 14, 20);
+
+numbers.push('a');
+
+let soma = somaDosPares(numbers);
+
+function somaDosPares(numbers){
+  let soma = null;
+
+for(let i = 0; i < numbers.length; i++){
+  if(!isNaN(numbers[i]) && numbers[i] % 2 === 0){
+soma += numbers[i];
+}
+}
+return escreva('A soma dos pares é : ' + soma);
+
+}
+
+function escreva(menssagem){
+  document.querySelector('#output').innerHTML = menssagem;
+}*/
+
+    </script>
+  </body>
+</html>
